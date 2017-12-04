@@ -1,0 +1,41 @@
+﻿<!doctype html>
+<html lang="nl">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="example for randomly made js colors">
+		<meta name="author" content="Valiant Hekert">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" href="css/css.css">
+		
+		<title>Example</title>
+		
+	</head>
+	<body>
+		<div class="container">
+			<script>
+				for(x=0; x < 100; x++){
+					document.write("<div class=\"example\"></div>");
+				}
+			</script>
+		</div>
+		
+		<script src="js/random-colors.js" type="text/javascript"></script>
+		
+		<script>
+		setInterval(function() {
+			setColors(
+				0,    // min red
+				255,    // max red
+				0,    // min green
+				255,    // max green
+				0,    // min blue
+				255,    // max blue
+				'example'); // what class
+			}, 999);
+		</script>
+	</body>
+</html>
+
+
+
